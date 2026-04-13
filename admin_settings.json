@@ -1,0 +1,16 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/admin_settings.json b/admin_settings.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..f53567bf683b5b3a7beac3ac7e7adce59cecfa05
+--- /dev/null
++++ b/admin_settings.json
+@@ -0,0 +1,6 @@
++{
++  "hidden_projects": [],
++  "bot_stats_author_id": null,
++  "bot_stats_author_name": "",
++  "bot_stats_project_ids": []
++}
+ 
+EOF
+)
